@@ -1,5 +1,5 @@
 {
-  "name": "NodeJS ARK Server Data",
+  "name": "arkdata",
   "version": "1.0.0",
   "description": "NodeJS port of AuthiQ's ARK Server Data Reader.",
   "main": "index.js",
