@@ -1,6 +1,20 @@
 {
   "name": "arkdata",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "url": "https://github.com/knightzac19/NodeJS-ArkData",
+  "keywords": [
+	  "ark",
+	  "sourcequery",
+	  "steam",
+	  "api"
+  ],
+  "repository": {
+	  "type": "git",
+	  "url": "git://github.com/knightzac19/NodeJS-ArkData.git"
+  },
+  "bugs": {
+	  "url": "https://github.com/knightzac19/NodeJS-ArkData/issues"
+  },
   "description": "NodeJS port of AuthiQ's ARK Server Data Reader.",
   "main": "index.js",
   "dependencies": {
@@ -15,6 +29,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Zachary Knight",
+  "author": {
+	  "name": "Zachary Knight",
+	  "email": "knightzac@gmail.com"
+  },
+  "contributors": [
+	  "Zachary Knight <knightzac@gmail.com>"
+  ],
   "license": "GPL-3.0"
 }
