@@ -1,6 +1,6 @@
 {
   "name": "arkdata",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "NodeJS port of AuthiQ's ARK Server Data Reader.",
   "main": "index.js",
   "dependencies": {
