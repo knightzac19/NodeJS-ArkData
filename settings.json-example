@@ -1,5 +1,6 @@
 {
     "server_config": {
-		"ark_path": "C:\\Steam\\steamapps\\common\\ARK\\ShooterGame"
+		"ark_path": "C:\\Steam\\steamapps\\common\\ARK\\ShooterGame",
+		"steam_key": "YOURSTEAMKEY"
     }
 }
