@@ -5,7 +5,6 @@ This is a port of AuthiQ's ARK Server Data Reader into NodeJS. There might still
 If you wish to see how it's used, please see my NodeJS Web service https://github.com/knightzac19/NodeJS-ArkService.
 
 ----
-
 You can help me test the library by running the following with npm
 
 ```npm install git+https://github.com/knightzac19/NodeJS-ArkData.git```
