@@ -21,14 +21,14 @@ var player = arkdata.player;
 var tribe = arkdata.tribe;
 ```
 
-In your project just have the following two callbacks,
+This project is filled with promises and thus you just have to do this now,
 
 ```
-player.setupPlayers(function() {  
-    tribe.setupTribes(function() {
-      /*Put all your code in here to ensure that your player data is all set. */
-      });
-});
+player.setupPlayers()
+	.then( () => tribe.setupTribes())
+	.then( ()=> {
+		 //Put all your code in here.
+		});
 ```
 
 ## Issues
