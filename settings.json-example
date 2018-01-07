@@ -1,6 +1,9 @@
 {
     "server_config": {
-		"ark_path": "C:\\Steam\\steamapps\\common\\ARK",
-		"steam_key": "YOURSTEAMKEY"
+		"ark_path": "C:\\Steam\\steamapps\\common\\ARK\\ShooterGame",
+		"steam_key": "YOURSTEAMKEY",
+    "dbhost": "localhost",
+    "dbuser": "postgres",
+    "dbpass": ""
     }
 }
