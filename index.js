@@ -1,3 +1,9 @@
-/*jshint esversion: 6 */
-module.exports.player = require("./lib/playercache.js");
-module.exports.tribe = require("./lib/tribecache.js");
+const arkcache = require("./lib/cachedata.js");
+const ArkCacher = new arkcache();
+
+class ArkData {
+  refresh() {
+    ArkCacher.runCache();
+  }
+}
+module.exports = ArkData;

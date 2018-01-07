@@ -21,8 +21,11 @@
     "bluebird": "^3.4.1",
     "body-parser": "^1.15.2",
     "chunk": "0.0.2",
+    "lodash": "^4.17.4",
+    "pg": "^6.4.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "git+https://github.com/lext-7/sequelize.git",
     "sprintf-js": "^1.0.3",
-    "sqlite3": "^3.1.4",
     "steam-webapi": "^0.6.5"
   },
   "scripts": {
@@ -35,5 +38,8 @@
   "contributors": [
     "Zachary Knight <knightzac@gmail.com>"
   ],
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "nodemon": "^1.14.7"
+  }
 }
