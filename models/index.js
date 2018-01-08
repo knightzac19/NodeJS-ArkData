@@ -1,31 +1,24 @@
 'use strict';
 
-var fs        = require('fs');
-var path      = require('path');
+var fs = require('fs');
+var path = require('path');
 const Sequelize = require('sequelize');
-var basename  = path.basename(__filename);
-var env       = process.env.NODE_ENV || 'development';
-var config    = require(__dirname + '/../config/config.json')[env];
-var db        = {};
+var basename = path.basename(__filename);
+var db = {};
 
 // if (config.use_env_variable) {
 //   var sequelize = new Sequelize(process.env[config.use_env_variable], config);
 // } else {
 //   var sequelize = new Sequelize(config.database, config.username, config.password, config);
 // }
-
-const sequelize = new Sequelize(config.database, config.username, config.password, {
-  host: 'localhost',
-  dialect: 'postgres',
-
-  pool: {
-    max: 5,
-    min: 0,
-    acquire: 30000,
-    idle: 10000
-  },
-    logging: false
-});
+let options =  {
+  host: process.env.DBHOST || 'localhost',
+  dialect: 'postgres'
+};
+// if(process.argv[2] !== 'test') {
+  options.logging = false
+// }
+const sequelize = new Sequelize(process.env.PGDATABASE || 'arkdata', process.env.PGUSER || 'postgres', process.env.PGPASSWORD || '',options);
 
 fs
   .readdirSync(__dirname)
@@ -42,7 +35,7 @@ Object.keys(db).forEach(modelName => {
     db[modelName].associate(db);
   }
 });
-sequelize.sync({ alter: true });
+
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 

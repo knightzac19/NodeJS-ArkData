@@ -6,4 +6,7 @@ class ArkData {
     ArkCacher.runCache();
   }
 }
+if(process.argv[2] == "test") {
+  ArkCacher.runCache();
+}
 module.exports = ArkData;

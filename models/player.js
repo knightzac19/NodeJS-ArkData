@@ -28,5 +28,9 @@ module.exports = (sequelize, DataTypes) => {
       fields: ['id', 'steamId']
     }]
   });
+  Player.associate = function(models) {
+    models.Player.hasOne(models.TribeMember);
+    models.Player.hasOne(models.TribeOwner);
+  };
   return Player;
 };

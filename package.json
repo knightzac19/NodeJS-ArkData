@@ -1,6 +1,6 @@
 {
   "name": "arkdata",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "url": "https://github.com/knightzac19/NodeJS-ArkData",
   "keywords": [
     "ark",
@@ -29,7 +29,7 @@
     "steam-webapi": "^0.6.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon test"
   },
   "author": {
     "name": "Zachary Knight",
